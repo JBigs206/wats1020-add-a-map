@@ -54,28 +54,31 @@ var map = L.map('map-container').setView([46.852, -121.760], 10);
 
 L.control.layers(mapLayers).addTo(map);
 drawLayer.addTo(map);
-
+	
+	//pop-up for Mt. Rainier peak
 var peak = L.marker([46.852, -121.760]).addTo(map);
 peak.bindPopup("<b>Welcome to Mt. Rainier!</b><br>This peak is 4,392 feet high.");
 
-	
+	//adds visual of Cougar Rock campsite area
 	var polygon = L.polygon([
 	[46.764467,-121.799734],
 	[46.769258,-121.793339],
 	[46.765702,-121.793725]
 	]).addTo(map);
 	
-	
+	//makes pop-up for Cougar Rock appear 
 $('#CougarBtn').click(function () {
  	var CougarRock = L.marker([46.766819,-121.794884], 8).addTo(map);
     CougarRock.bindPopup("<b>Cougar Rock</b><br>Campground for Cougar Rock area.");	
 	});
 
+	//makes pop-up for Goat Island appear 
 $('#GoatBtn').click(function(){
 	var Goat = L.marker([46.880288, -121.660795]).addTo(map);
 	Goat.bindPopup("<b>Goat Island Mountain</b><br>Neighboring Mountain Goat Island.");
 	});
 	
+	//makes pop-up for Observation Rock appear 
 $('#ObRockBtn').click(function(){
 	var obRock = L.marker([46.901603, -121.806685]).addTo(map);
 	obRock.bindPopup("<b>Observation Rock</b><br>Remnant vent on the north side of Mt. Rainier.");
