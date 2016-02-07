@@ -4,6 +4,43 @@
 
 #map-container { height: 180px; }
 
+ .affix {
+      top: 0;
+      width: 100%;
+  }
+
+table, td, th {
+    border: 1px solid black;
+	text-align: center;
+	height: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: center;
+}
+
+#tableStyle{
+	background-color:blue;
+	color:white;
+}
+
+td{
+	background-color: Green;
+	color:white;
+}
+
+#mapItems ul {
+	display:inline;
+}
+
+#mapItems h4 {
+	padding-left: 50px; 
+}
 
 
 
